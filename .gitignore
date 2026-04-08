@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables (API KEYS!)
+.env
+.env.local
+.env.production
+
+# API keys - NEVER commit these!
+api_key.txt
+secrets.py
+config.py
+*.key
+*.pem
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Flask stuff
+instance/
+.webassets-cache
+
+# Render deployment
+.render/
+
+# Backup files
+*.bak
+*.backup
