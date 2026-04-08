@@ -260,7 +260,7 @@ class EvoComplete:
             self.conn.commit()
             return
         
-        # 🔑 Get API key fresh each time (FIXED!)
+        # 🔑 Get API key fresh each time (FIXED - no global variable!)
         api_key = os.environ.get('GROQ_API_KEY', '')
         
         if not api_key:
