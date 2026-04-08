@@ -21,6 +21,13 @@ import os
 app = Flask(__name__)
 app.secret_key = 'evo_ultimate_secret_key_2024'
 
+# ============================================
+# 🔑 INSERT YOUR GROQ API KEY BELOW
+# Get it from: https://console.groq.com/keys
+# ============================================
+YOUR_GROQ_API_KEY = "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"  # <--- PASTE YOUR KEY INSIDE THE QUOTES
+# ============================================
+
 class EvoComplete:
     def __init__(self):
         self.conn = sqlite3.connect('evo_complete.db', check_same_thread=False)
@@ -260,11 +267,11 @@ class EvoComplete:
             self.conn.commit()
             return
         
-        # 🔑 Get API key fresh each time (FIXED - no global variable!)
-        api_key = os.environ.get('GROQ_API_KEY', '')
+        # Use the API key from the top of the file
+        api_key = YOUR_GROQ_API_KEY
         
-        if not api_key:
-            yield "⚠️ API key not configured. Please set GROQ_API_KEY environment variable in Render."
+        if not api_key or api_key == "gsk_YOUR_API_KEY_HERE":
+            yield "⚠️ Please put your Groq API key in the code at the top where it says YOUR_GROQ_API_KEY"
             return
         
         # Set style based on message type
