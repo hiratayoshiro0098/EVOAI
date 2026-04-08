@@ -25,7 +25,7 @@ app.secret_key = 'evo_ultimate_secret_key_2024'
 # 🔑 GET API KEY FROM ENVIRONMENT VARIABLE
 # DO NOT HARDCODE! Set this in Render.com environment variables
 # ============================================
-GROQ_API_KEY = os.environ.get('GROQ_API_KEY', '')
+GROQ_API_KEY = os.environ.get('GROQ_API_KEY', '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')
 
 class EvoComplete:
     def __init__(self):
