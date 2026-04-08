@@ -21,18 +21,6 @@ import os
 app = Flask(__name__)
 app.secret_key = 'evo_ultimate_secret_key_2024'
 
-# ============================================
-# 🔑 GET API KEY FROM ENVIRONMENT VARIABLE
-# DO NOT HARDCODE! Set this in Render.com environment variables
-# ============================================
-def think_stream(self, user_message):
-    # Get API key fresh each time
-    api_key = os.environ.get('GROQ_API_KEY', '')
-    
-    if not api_key:
-        yield "⚠️ API key not configured. Please set GROQ_API_KEY environment variable."
-        return
-
 class EvoComplete:
     def __init__(self):
         self.conn = sqlite3.connect('evo_complete.db', check_same_thread=False)
@@ -272,8 +260,11 @@ class EvoComplete:
             self.conn.commit()
             return
         
-        if not GROQ_API_KEY:
-            yield "⚠️ API key not configured. Please set GROQ_API_KEY environment variable."
+        # 🔑 Get API key fresh each time (FIXED!)
+        api_key = os.environ.get('GROQ_API_KEY', '')
+        
+        if not api_key:
+            yield "⚠️ API key not configured. Please set GROQ_API_KEY environment variable in Render."
             return
         
         # Set style based on message type
@@ -299,7 +290,7 @@ class EvoComplete:
         
         url = "https://api.groq.com/openai/v1/chat/completions"
         headers = {
-            "Authorization": f"Bearer {GROQ_API_KEY}",
+            "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json"
         }
         
