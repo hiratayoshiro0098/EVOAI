@@ -5,22 +5,22 @@
 **This repository is for DEPLOYMENT purposes only.**
 
 - ❌ You are NOT permitted to copy this code
-- ❌ You are NOT permitted to modify or distribute this code
+- ❌ You are NOT permitted to modify or distribute this code  
 - ❌ You are NOT permitted to claim this as your own
 
 **You MAY:**
 - ✅ Use the deployed version of EVO at the live URL
-- ✅ Watch the creator's YouTube channel: @VOIDFOX
+- ✅ Watch the creator's YouTube channel: @VoidVulpes
 
 **By viewing this repository, you agree to these terms.**
 
 ---
 
-# EVO AI - Created by Tarun Tiwari (VOID FOX)
+# EVO AI - Created by Tarun Tiwari (VoidVulpes)
 
 Your Personal AI Assistant | Self-Learning | Multiple Personalities
 
-[![YouTube](https://img.shields.io/badge/YouTube-VOID_FOX-red)](https://youtube.com/@VOIDFOX)
+[![YouTube](https://img.shields.io/badge/YouTube-VoidVulpes-red)](https://youtube.com/@VoidVulpes)
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 
 ## 🤖 About EVO
@@ -36,8 +36,8 @@ EVO is a self-learning AI assistant with features including:
 
 ## 👑 Creator
 
-**Tarun Tiwari (VOID FOX)**
-- YouTube: [@VOIDFOX](https://youtube.com/@VOIDFOX)
+**Tarun Tiwari (VoidVulpes)**
+- YouTube: [@VoidVulpes](https://youtube.com/@VoidVulpes)
 - From India 🇮🇳
 - Built with Python, Flask, and Groq API
 
@@ -55,4 +55,4 @@ Experience EVO at: **[Your Render URL Here]**
 
 ---
 
-© 2026 Tarun Tiwari (VOID FOX). All Rights Reserved.
+© 2026 Tarun Tiwari (VoidVulpes). All Rights Reserved.
